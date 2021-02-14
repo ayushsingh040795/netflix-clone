@@ -1,3 +1,4 @@
+import { PagesModule } from './layouts/pages/pages.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,21 +7,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module' ;
 import { FormsModule } from '@angular/forms';
-import { PagesComponent } from './layouts/pages/pages.component';
-import { ProfilesComponent } from './layouts/pages/profiles/profiles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagesComponent,
-    ProfilesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    DefaultModule
+    DefaultModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
